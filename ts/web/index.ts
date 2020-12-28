@@ -16,16 +16,15 @@
 						Math.floor(routerPing) + 'ms';
 					document.getElementById('External').innerText =
 						Math.floor(ping) + 'ms';
-					actualRun();
 				}, 100);
 			})
 			.catch(() => {
 				setTimeout(() => {
 					document.getElementById('Router').innerText = 'No Wifi';
 					document.getElementById('External').innerText = 'No Wifi';
-					actualRun();
 				}, 100);
 			});
 	};
+	setInterval(actualRun, 7500);
 	actualRun();
 })();

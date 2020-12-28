@@ -1,5 +1,7 @@
 performance = require('perf_hooks').performance;
 
+const network = require('network');
+
 const avg = (t: number[]) => {
 	let combined = 0;
 	t.forEach(a => {
@@ -44,7 +46,8 @@ const wifiIPs = ['1.1.1.1', '1.0.0.1', '8.8.8.8']; // to check if wifi is availa
  * @name internalIPs
  * @description IPs to check if wifi is existant at all (local wifi ips)
  */
-const internalIPs = ['192.168.0.1', '192.168.1.1']; // to check if wifi is available
+const internalIPs = [network.get_gateway_ip() || '192.168.1.1']; // to check if wifi is available
+// const internalIPs = ['192.168.0.1', '192.168.1.1']; // to check if wifi is available
 
 // --------------------------------------------------------------------------------
 
