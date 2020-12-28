@@ -115,7 +115,7 @@ const run = (doOut: boolean = true) => {
 			});
 			x.then(() => {
 				x = new Promise((res, rej) => {
-					a(wifiDomains, 'DNS Resolved Servers', res, rej);
+					a(wifiDomains, 'DNS Resolved Servers', res, rej, false, true);
 				});
 				x.then(() => {
 					x = new Promise((res, rej) => {
