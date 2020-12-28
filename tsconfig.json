@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"outDir": "js", // this gets built by Electron-Builder
+		"rootDir": "ts",
+		"pretty": false,
+		"removeComments": true,
+		"inlineSourceMap": true
+	}
+}
