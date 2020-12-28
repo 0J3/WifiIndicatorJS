@@ -1,5 +1,6 @@
 {
 	"name": "wifiindicatorjs",
+	"description": "wifi ping thing cuz mine broke",
 	"version": "1.0.0",
 	"main": "js/index.js",
 	"repository": "https://github.com/0J3/WifiIndicatorJS.git",
@@ -7,7 +8,13 @@
 	"license": "MIT",
 	"dependencies": {
 		"chalk": "^4.1.0",
-		"electron-builder": "^22.9.1",
 		"ping": "^0.4.0"
+	},
+	"devDependencies": {
+		"electron": "^11.0.2",
+		"electron-builder": "^22.9.1"
+	},
+	"scripts": {
+		"start": "electron ."
 	}
 }
