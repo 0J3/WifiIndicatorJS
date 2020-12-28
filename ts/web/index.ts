@@ -19,7 +19,13 @@
 					actualRun();
 				}, 100);
 			})
-			.catch(() => {});
+			.catch(() => {
+				setTimeout(() => {
+					document.getElementById('Router').innerText = 'No Wifi';
+					document.getElementById('External').innerText = 'No Wifi';
+					actualRun();
+				}, 100);
+			});
 	};
 	actualRun();
 })();
