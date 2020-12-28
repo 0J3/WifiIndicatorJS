@@ -15,6 +15,21 @@
 		"electron-builder": "^22.9.1"
 	},
 	"scripts": {
-		"start": "electron ."
+		"start": "electron .",
+		"pack": "electron-builder --dir",
+		"dist": "electron-builder --win",
+		"postinstall": "electron-builder install-app-deps"
+	},
+	"build": {
+		"appId": "0j3.js.wifiindicator",
+		"nsis": {
+			"oneClick": false,
+			"allowElevation": true,
+			"perMachine": true,
+			"allowToChangeInstallationDirectory": true,
+			"installerIcon": "Icons/Icon.png",
+			"uninstallerIcon": "Icons/Icon.png",
+			"license": "license.html"
+		}
 	}
 }
