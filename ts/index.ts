@@ -1,10 +1,10 @@
-// Modules to control application life and create native browser window
 const { app, BrowserWindow } = require('electron');
+const fs = require('fs');
 const path = require('path');
 
 const createWindow = () => {
 	// Create the browser window.
-	let width = 150;
+	let width = 175;
 	let height = 60;
 	const mainWindow = new BrowserWindow({
 		width: width,
@@ -19,7 +19,11 @@ const createWindow = () => {
 		},
 	});
 
-	mainWindow.loadFile(path.resolve('index.html'));
+	// ;
+
+	mainWindow.loadFile('index.html');
+
+	// mainWindow.loadFile(path.join(__dirname, '../index.html'));
 
 	mainWindow.setAlwaysOnTop(true);
 	mainWindow.setOpacity(0.5);

@@ -19,6 +19,7 @@ const pingDomains = [
 	'iana.org',
 	'example.com',
 	'discord.com',
+	'hypixel.net',
 ];
 
 /**

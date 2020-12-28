@@ -30,8 +30,8 @@
 			"allowElevation": true,
 			"perMachine": true,
 			"allowToChangeInstallationDirectory": true,
-			"installerIcon": "Icons/Icon.png",
-			"uninstallerIcon": "Icons/Icon.png",
+			"installerIcon": "Icons/Icon.ico",
+			"uninstallerIcon": "Icons/Icon.ico",
 			"license": "license.html"
 		}
 	}
