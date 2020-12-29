@@ -26,7 +26,8 @@ const createWindow = () => {
 	// mainWindow.loadFile(path.join(__dirname, '../index.html'));
 
 	mainWindow.setAlwaysOnTop(true);
-	mainWindow.setOpacity(0.5);
+	mainWindow.setSkipTaskbar(true);
+	mainWindow.setOpacity(0.7);
 };
 
 app.whenReady().then(() => {
