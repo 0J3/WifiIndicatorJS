@@ -1,7 +1,7 @@
 {
 	"name": "wifiindicatorjs",
 	"description": "wifi ping thing cuz mine broke",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "js/index.js",
 	"repository": "https://github.com/0J3/WifiIndicatorJS.git",
 	"author": "0J3 <git@wafflepowered.com>",
