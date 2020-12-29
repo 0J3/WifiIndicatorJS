@@ -8,22 +8,16 @@
 	}
 	const run = require(path);
 	const actualRun = () => {
-		console.clear();
-		run()
-			.then(({ ping, routerPing }) => {
-				setTimeout(() => {
-					document.getElementById('Router').innerText =
-						Math.floor(routerPing) + 'ms';
-					document.getElementById('External').innerText =
-						Math.floor(ping) + 'ms';
-				}, 100);
-			})
-			.catch(() => {
-				setTimeout(() => {
-					document.getElementById('Router').innerText = 'No Wifi';
-					document.getElementById('External').innerText = 'No Wifi';
-				}, 100);
-			});
+		run().then(({ ping, routerPing }) => {
+			setTimeout(() => {
+				document.getElementById('Router').innerText = isNaN(routerPing)
+					? 'No Wifi'
+					: Math.floor(routerPing) + 'ms';
+				document.getElementById('External').innerText = isNaN(ping)
+					? 'No Wifi'
+					: Math.floor(ping) + 'ms';
+			}, 100);
+		});
 	};
 	setInterval(actualRun, 1000);
 	actualRun();

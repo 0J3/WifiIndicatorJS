@@ -1,7 +1,7 @@
 {
 	"name": "wifiindicatorjs",
 	"description": "wifi ping thing cuz mine broke",
-	"version": "1.0.1",
+	"version": "1.1.0-2",
 	"main": "js/index.js",
 	"repository": "https://github.com/0J3/WifiIndicatorJS.git",
 	"author": "0J3 <git@wafflepowered.com>",
@@ -9,7 +9,8 @@
 	"dependencies": {
 		"chalk": "^4.1.0",
 		"network": "^0.5.0",
-		"ping": "^0.4.0"
+		"ping": "^0.4.0",
+		"tcp-ping": "^0.1.1"
 	},
 	"devDependencies": {
 		"electron": "^11.0.2",
@@ -25,14 +26,16 @@
 	},
 	"build": {
 		"appId": "0j3.js.wifiindicator",
+		"productName": "WifiIndicatorJS",
+		"copyright": "Copyright © 2020 0J3.",
 		"nsis": {
 			"oneClick": false,
-			"allowElevation": true,
 			"perMachine": true,
 			"allowToChangeInstallationDirectory": true,
 			"installerIcon": "Icons/Icon.ico",
 			"uninstallerIcon": "Icons/Icon.ico",
-			"license": "license.html"
+			"license": "license.html",
+			"menuCategory": true
 		}
 	}
 }
