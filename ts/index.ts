@@ -9,8 +9,8 @@ const createWindow = () => {
 	const mainWindow = new BrowserWindow({
 		width: width,
 		height: height,
-		maxHeight: height,
-		maxWidth: width,
+		maxHeight: height+64,
+		maxWidth: width+64,
 		minHeight: height,
 		minWidth: width,
 		frame: false,
